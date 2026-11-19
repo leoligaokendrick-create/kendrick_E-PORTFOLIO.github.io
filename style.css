@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.menu a {
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: #7dd3fc;
+}
+
+/* intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+.intro-text {
+  width: 50%;
+}
+
+.intro-text h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.blue {
+  color: #7dd3fc;
+  white-space: nowrap;
+}
+
+.photo img {
+  width: 320px;
+  border-radius: 150px 150px 20px 20px;
+  box-shadow: 16px 16px 0 #ffffff;
+}
+
+.button {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.button:hover {
+  background: #7dd3fc;
+}
+
+/* sections */
+.section {
+  padding: 50px 8%;
+  scroll-margin-top: 90px;
+}
+
+.section h2 {
+  color: #7dd3fc;
+}
+
+/* hobbies */
+.hobbies-title {
+  color: #7dd3fc;
+  margin: 30px 0 12px;
+}
+
+.hobbies {
+  display: flex;
+  gap: 20px;
+}
+
+.hobby {
+  flex: 1;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.hobby:hover {
+  border-color: #7dd3fc;
+}
+
+.hobby h4 {
+  color: #7dd3fc;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.hobby p {
+  color: #bbbbbb;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background: #111111;
+  border: 1px solid #333333;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.skills span:hover {
+  border-color: #7dd3fc;
+}
+
+/* education */
+.education-card {
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.education-card h3 {
+  color: #7dd3fc;
+  margin: 0 0 8px;
+}
+
+.education-card p {
+  color: #bbbbbb;
+  margin: 0 0 4px;
+}
+
+.education-card .year {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* projects */
+.project-list {
+  display: flex;
+  gap: 20px;
+}
+
+.project {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.project:hover {
+  border-color: #7dd3fc;
+}
+
+.number {
+  color: #7dd3fc;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.project h3 {
+  margin: 15px 0 10px;
+}
+
+.project p {
+  color: #bbbbbb;
+  margin: 0 0 20px;
+}
+
+.project-link {
+  color: #7dd3fc;
+  margin-bottom: 20px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+/* contact */
+.contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 32px;
+  color: #7dd3fc;
+}
+
+.contact-item:hover i {
+  color: #ffffff;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 25px 8%;
+  margin-top: 40px;
+  border-top: 1px solid #333333;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+/* phone screens */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-text {
+    width: 100%;
+  }
+  .intro-text h1 {
+    font-size: 36px;
+  }
+  .photo img {
+    width: 240px;
+    margin-top: 30px;
+  }
+  .hobbies,
+  .project-list {
+    flex-direction: column;
+  }
+}
